@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign In</title>
+
+<!-- ✅ Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, #0b0d14, #05070c);
+    color:#fff;
+}
+
+.login-card{
+    width:360px;
+    padding:32px 28px;
+    background: linear-gradient(180deg,#121421,#0d0f19);
+    border-radius:18px;
+    box-shadow: 0 0 60px rgba(0,255,200,0.8);
+}
+
+.icon{
+    text-align:center;
+    font-size:26px;
+    color:#22f1c3;
+    margin-bottom:8px;
+}
+
+h1{
+    text-align:center;
+    margin:0;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:14px;
+    color:#dadded;
+    margin-bottom:28px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+label{
+    font-size:13px;
+    color:#ffff;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border-radius:10px;
+    background:#0000;
+    border:1.5px solid #1c2138;
+    color:#fff;
+    outline:none;
+}
+
+input:focus{
+    border-color:#ffff;
+    box-shadow:0 0 12px rgba(34,241,200,0.5);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    color:#ffff;
+    margin:16px 0 24px;
+}
+
+.options a{
+    color:#ffff;
+    text-decoration:none;
+}
+
+.signin-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background: linear-gradient(90deg,#22f1c3,#22f1c3);
+    color:#000;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.signin-btn:hover{
+    opacity:0.8;
+}
+
+.divider{
+    text-align:center;
+    margin:26px 0;
+    font-size:13px;
+    color:#ffff;
+}
+
+.social button{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    background:#1C2036;
+    border:1px solid #1c2138;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.social button:hover{
+    border-color:#F3F7F0;
+}
+
+.footer{
+    text-align:center;
+    font-size:13px;
+    color:#F3F7F0;
+    margin-top:12px;
+}
+
+.footer a{
+    color:#066B00;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-card">
+
+    <div class="icon">⚡</div>
+    <h1>SIGN IN</h1>
+    <div class="subtitle">Access your account</div>
+
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+    </div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+    </div>
+
+    <div class="options">
+        <label><input type="checkbox"> Keep me signed in</label>
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="signin-btn">SIGN IN</button>
+
+    <div class="divider">OR</div>
+
+    <div class="social">
+        <button>Continue with Google</button>
+        <button>Continue with Apple</button>
+    </div>
+
+    <div class="footer">
+        NEW HERE? <a href="#">Create an account</a>
+    </div>
+
+</div>
+
+</body>
+</html>
